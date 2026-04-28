@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Personal - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link th:href="@{/assets/css/styles.css}" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100 bg-light resume-page">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg py-3">
+  <div class="container px-5 d-flex justify-content-between align-items-center">
+
+    <!-- Left: Portfolio -->
+    <span class="navbar-brand text-white">
+      Portfolio
+    </span>
+
+    <!-- Right: Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  </div>
+
+  <!-- Menu -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+      <li class="nav-item"><a class="nav-link text-white" th:href="@{/}">Home</a></li>
+      <li class="nav-item"><a class="nav-link text-white" th:href="@{/resume}">Resume</a></li>
+      <li class="nav-item"><a class="nav-link text-white" th:href="@{/projects}">Projects</a></li>
+      <li class="nav-item"><a class="nav-link text-white" th:href="@{/contact}">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+            <!-- Page Content-->
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Experience Section-->
+                        <section>
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2 class="fw-bolder mb-0 edu-heading">Experience</h2>
+                                <!-- Download resume button-->
+                                <!-- Note: Set the link href target to a PDF file within your project-->
+                                <a href="/assets/Lakshita_Resume.pdf" download 
+   class="btn btn-primary px-4 py-3">
+   <i class="bi bi-download me-2"></i>
+   Download Resume
+</a>
+                            </div>
+                            <!-- Experience Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">Jan 2026 - Present</div>
+                                                <div class="small fw-bolder exp-role">AI Engineer Intern</div>
+                                                <div class="small exp-company">NorthBridge Consulting</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>
+                                            <ul>
+                                                <li>Designed and optimized prompts for Large Language Models (LLMs) to improve response accuracy</li>
+                                            <li>Reduced hallucinations and improved consistency through prompt refinement and testing</li>
+                                            <li>Collaborated with developers to integrate AI-powered features into applications</li>
+                                            <li>Worked on prompt engineering workflows and AI evaluation techniques</li></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience Card 2-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">May 2025 – Aug 2025</div>
+                                                <div class="small fw-bolder exp-role">Full Stack Developer Intern</div>
+                                                <div class="small exp-role">Cognizant Technology Solutions</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div><ul>
+                                                <li>Developed a hospital appointment booking system using Java, Spring Boot, and MySQL</li>
+                                            <li>Built REST APIs and integrated them with Angular frontend </li>
+                                            <li>Implemented secure authentication and user registration modules</li>
+                                            <li>Improved system efficiency and ensured structured data management</li></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience Card 3-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">Apr 2024 – Jun 2024</div>
+                                                <div class="small fw-bolder text-secondary">Web Developer Intern</div>
+                                                <div class="small text-secondary">G-INFOSOFT Technologies</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div><ul>
+                                                <li>Developed a responsive website using HTML, CSS, Bootstrap, and JavaScript</li>
+                                            <li>Designed clean UI ensuring cross-device compatibility</li>
+                                            <li>Managed content using MySQL and Excel for better data handling</li>
+                                            <li>Improved website usability and performance</li></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Education Section-->
+                        <section>
+                            <h2 class="fw-bolder mb-4 edu-heading">Education</h2>
+                            <!-- Education Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="fw-bolder mb-2 timeline-text">2021 - 2025</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">LNCT University</div>
+                                                    <div class="small text-muted">Bhopal</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">B.Tech Computer Science (AIML)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div><ul>
+                                                <li>Specialized in Artificial Intelligence and Machine Learning</li>
+                                            <li>Strong foundation in Data Structures, DBMS, and OOP</li>
+                                            <li>Built full-stack and AI-based projects using Java, Spring Boot, and Angular</li>
+                                            <li>Actively involved in practical project development and internships</li></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Divider-->
+                        <div class="pb-5"></div>
+                        <!-- Skills Section-->
+                        <section>
+                            <!-- Skillset Card-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <!-- Professional skills list-->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4 gap-3">
+    <div class="feature custom-icon text-white rounded-3">
+        <i class="bi bi-tools"></i>
+    </div>
+    <h3 class="fw-bolder text-gradient mb-0">Professional Skills</h3>
+</div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Full Stack Development</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">REST API Development</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Microservices Architecture</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Database Design (MySQL)</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Responsive Web Design</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">System Design Basics</div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Languages list-->
+                                    <div class="d-flex align-items-center mb-4 gap-3">
+    <div class="feature custom-icon text-white rounded-3">
+        <i class="bi bi-code-slash"></i>
+    </div>
+    <h3 class="fw-bolder text-gradient mb-0">Languages</h3>
+</div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Java</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Spring Boot</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MySQL</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Bootstrap</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">GitHub</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+  <div class="container px-5 text-center">
+    <a href="/privacy">Privacy</a>
+    ·
+    <a href="/terms">Terms</a>
+    ·
+    <a href="/contact">Contact</a>
+  </div>
+</footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script th:src="@{/assets/js/scripts.js}"></script>
+    </body>
+</html>
