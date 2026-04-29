@@ -12118,3 +12118,21 @@ section {
     transform: scale(1.05);
     transition: 0.3s ease;
 }
+@media (max-width: 768px) {
+
+    .profile {
+        width: 320px;
+        height: 320px;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-end; /* image bottom align */
+        justify-content: center;
+    }
+
+    .profile-img {
+        width: 110%;
+        height: auto;
+        object-fit: cover;
+    }
+
+}
